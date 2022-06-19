@@ -27,7 +27,6 @@ body.modal-open {
 section {
   padding-top: 94px;
   padding-bottom: 94px;
-  overflow-y: hidden;
 }
 
 .section-title {
@@ -726,8 +725,8 @@ ul {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head.png);
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head.png);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head.jpg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 15px;
