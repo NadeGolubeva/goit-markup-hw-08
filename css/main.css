@@ -1252,7 +1252,6 @@ Modal form  div
 .menu-button .icon-cross {
   fill: #212121;
   display: block;
-  z-index: 110;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -1291,6 +1290,7 @@ Modal form  div
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
     display: block;
+    z-index: 100;
   }
 }
 

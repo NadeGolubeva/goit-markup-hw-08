@@ -40,7 +40,7 @@
 .menu-button .icon-cross {
     fill: #212121;
     display: block;
-z-index: 110;
+
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,7 +85,7 @@ height: 100%;
 @media screen and (max-width: 767px) {
     &.is-open {
         display: block;
-        
+            z-index: 100;
     }}
        
          @media screen and (min-width: 768px) {
