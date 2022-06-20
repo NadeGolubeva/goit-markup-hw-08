@@ -55,18 +55,20 @@
 
 .menu-button.is-open .icon-cross {
     display: none;
-    background-image: url(../../sprite.svg#icon-close_menu);
-    
+    background-image: url(../sprite.svg#icon-close_menu);
+     position: fixed;
 }
 
 
-
+.btn-menu {
+    margin: 10px 15px;
+}
 
 .menu-container {
     display: none;
 
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 0;
 
     width: 100%;
@@ -86,7 +88,10 @@ height: 100%;
     &.is-open {
         display: block;
             z-index: 100;
-    }}
+           
+
+    }
+}
        
          @media screen and (min-width: 768px) {
              display: none;
