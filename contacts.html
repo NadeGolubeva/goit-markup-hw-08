@@ -19,8 +19,6 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
-
   <body class="page">
     <!--Шапка-->
 
@@ -30,45 +28,23 @@
           <a class="logo" href="./index.html">
             Web<span class="logo-color">Studio</span>
           </a>
-
-<!-- <div class="btn-menu">
-        <button 
-      type="button" 
-      class="menu-button is-open" 
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button>
-       <svg width="40" height="40" aria-label="cross-btn">
-         
-<use class="icon-cross" href="./sprite.svg#icon-close_menu"></use>
-<use class="icon-menu" href="./sprite.svg#icon-menu"></use>
-         
-       </svg>
-
-      </button>
-    </div>
- <div class="menu-container menu-block" id="menu-container" data-menu>
-    -->
-<!-- 
-<div class="navigation">
-  <ul class="header-nav list">
+          <ul class="header-nav list">
             <li class="item">
-              <a class="link current navigation-link" href="./index.html"
+              <a class="link  nav-link" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="item">
-              <a class="link navigation-link" href="./portfolio.htm"
+              <a class="link nav-link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
             <li class="item">
-              <a class="link navigation-link" href="./contacts.htm">Контакты</a>
+              <a class="link current nav-link" href="">Контакты</a>
             </li>
           </ul>
-</div>
-<div class="contacts-menu">
-             <ul class="list-address list">
+        </nav>
+        <ul class="list-address list">
           <li class="header-item item">
             <a class="mailto link" href="mailto:info@devstudio.com">
               <svg class="icon-envelope">
@@ -86,7 +62,61 @@
             >
           </li>
         </ul>
-          <!-- <ul class="menu-address list">
+        
+<!-- open mobile menu -->
+          <div class="btn-menu">
+
+            <button type="button" 
+            class="menu-button" 
+            data-modal-open>
+             <svg width="40" height="40" aria-label="cross-btn">
+                 <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
+             
+            </svg></button> </div>
+
+
+                <!-- <button 
+              type="button" 
+              class="menu-button is-open" 
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button>
+               <svg width="40" height="40" aria-label="cross-btn">
+                 <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
+                 
+        <use class="icon-cross" href="./sprite.svg#icon-close_menu"></use>
+                 
+               </svg>
+        
+              </button></div> -->
+          <div class="menu-container" id="menu-container is-hidden" data-modal>
+            
+            <div class="menu-block">
+            <button type="button" 
+            class="menu-button" 
+            data-modal-close>
+             <svg width="40" height="40" aria-label="cross-btn">
+               <use class="icon-cross" href="./sprite.svg#icon-close_menu"></use>
+             
+            </svg></button>
+          <ul class="menu list">
+            <li class="item">
+              <a class="link navigation-link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="item">
+              <a class="link navigation-link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a class="link active navigation-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+        <div class="contacts-menu">
+          <ul class="menu-address list">
             <li class="header-item item">
               <a class="tel link" href="tel:380961111111">
                 
@@ -99,19 +129,18 @@
               info@devstudio.com</a
             >
           </li>
-        </ul> -->
+        </ul>
         <ul class="social-menu list">
           <li class="item"><a class="link" href="">Twitter</a></li>
           <li class="item"><a class="link" href="">Facebook</a></li>
           <li class="item"><a class="link" href="">LinkedIn</a></li>
           <li class="item"><a class="link" href="">Instagram</a></li>
         </ul>
- </div>
+        </div>
 </div>
 
-</nav>
-</div> -->
-      
+</div>
+      </div>
     </header>
     <main>
       <!--Hero-->
@@ -217,7 +246,7 @@
               </div>
             </div>
           </div>
-        </div>
+         
       </section>
 
       <!--Qualities-->
@@ -321,13 +350,45 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/team/team-4-l.jpg 1x,
+                ./images/team/team-4-l@2x.jpg 2x,
+                "
+                sizes="(min-width: 1200px) 270px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/team-4-m.jpg 1x,
+                ./images/team/team-4-m@2x.jpg 2x,
+                "
+                sizes="(min-width: 768px)) 354px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 480px)"
+                srcset="
+                ./images/team/team-4-s.jpg 1x,
+                ./images/team/team-4-s@2x.jpg 2x,
+                "
+                sizes="(min-width: 480px) 450px, 100vw"
+                type="image/jpeg"
+                />
               <img
                 class="team-pic"
                 src="./images/team-1.jpg"
                 alt="Product Designer"
-                width="270"
-                height="260"
-              />
+                width="100%"
+                height="auto"
+                loading="lazy"
+                />
+                
+            
+            </picture>
               <div class="team-member">
                 <h3>Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -388,13 +449,45 @@
               </div>
             </li>
             <li class="item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/team/team-2-l.jpg 1x,
+                ./images/team/team-2-l@2x.jpg 2x,
+                "
+                sizes="(min-width: 1200px) 270px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/team-2-m.jpg 1x,
+                ./images/team/team-2-m@2x.jpg 2x,
+                "
+                sizes="(min-width: 768px)) 354px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 480px)"
+                srcset="
+                ./images/team/team-2-s.jpg 1x,
+                ./images/team/team-2-s@2x.jpg 2x,
+                "
+                sizes="(min-width: 480px) 450px, 100vw"
+                type="image/jpeg"
+                />
               <img
                 class="team-pic"
                 src="./images/team-2.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+                alt="Product Designer"
+                width="100%"
+                height="auto"
+                loading="lazy"
+                />
+                
+            
+            </picture>
               <div class="team-member">
                 <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -455,13 +548,45 @@
               </div>
             </li>
             <li class="item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/team/team-3-l.jpg 1x,
+                ./images/team/team-3-l@2x.jpg 2x,
+                "
+                sizes="(min-width: 1200px) 270px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/team-3-m.jpg 1x,
+                ./images/team/team-3-m@2x.jpg 2x,
+                "
+                sizes="(min-width: 768px)) 354px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 480px)"
+                srcset="
+                ./images/team/team-3-s.jpg 1x,
+                ./images/team/team-3-s@2x.jpg 2x,
+                "
+                sizes="(min-width: 480px) 450px, 100vw"
+                type="image/jpeg"
+                />
               <img
                 class="team-pic"
                 src="./images/team-3.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+                alt="Product Designer"
+                width="100%"
+                height="auto"
+                loading="lazy"
+                />
+                
+            
+            </picture>
               <div class="team-member">
                 <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -522,13 +647,45 @@
               </div>
             </li>
             <li class="item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./images/team/team-1-l.jpg 1x,
+                ./images/team/team-1-l@2x.jpg 2x,
+                "
+                sizes="(min-width: 1200px) 270px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./images/team/team-1-m.jpg 1x,
+                ./images/team/team-1-m@2x.jpg 2x,
+                "
+                sizes="(min-width: 768px)) 354px"
+                type="image/jpeg"
+                />
+                <source
+                media="(min-width: 480px)"
+                srcset="
+                ./images/team/team-1-s.jpg 1x,
+                ./images/team/team-1-s@2x.jpg 2x,
+                "
+                sizes="(min-width: 480px) 450px, 100vw"
+                type="image/jpeg"
+                />
               <img
                 class="team-pic"
                 src="./images/team-4.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
+                alt="Product Designer"
+                width="100%"
+                height="auto"
+                loading="lazy"
+                />
+                
+            
+            </picture>
               <div class="team-member">
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
@@ -760,7 +917,7 @@
                     placeholder="E-mail"
                 />
               
-              <button class="btn-form-footer" type="submit" class="btn-footer">
+              <button class="btn-form-footer" type="submit">
                 Подписаться
                 <svg class="send" width="24" height="24">
                   <use href="./sprite.svg#icon-send"></use>
@@ -769,7 +926,7 @@
             </div>
           </form>
         </div>
-      
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>

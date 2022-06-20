@@ -39,8 +39,8 @@
 
 .menu-button .icon-cross {
     fill: #212121;
-    display: block;
-
+    z-index: 100000;
+display: block;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,19 +50,21 @@
 
         fill: $accent-color;
         cursor: pointer;
+        z-index: 100000;
     }
 }
 
 .menu-button.is-open .icon-cross {
     display: none;
-    background-image: url(../sprite.svg#icon-close_menu);
+    background-image: url("../sprite.svg#icon-close_menu");
      position: fixed;
+z-index: 100000;
 }
-
-
-.btn-menu {
+.menu-button.is-open .btn-menu {
     margin: 10px 15px;
+    z-index: 10000;
 }
+
 
 .menu-container {
     display: none;
@@ -87,7 +89,7 @@ height: 100%;
 @media screen and (max-width: 767px) {
     &.is-open {
         display: block;
-            z-index: 100;
+            z-index: 1000;
            
 
     }

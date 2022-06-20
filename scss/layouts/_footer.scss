@@ -10,7 +10,8 @@
     
 .footer-container {
 
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -37,15 +38,15 @@
 }
 
 .logo-socials {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width: 1100px){
             display: flex;
             margin: auto;
             margin-bottom: 60px;
            
 }
 @media screen and (min-width:1200px) {
-   
-    margin-bottom: 0px;
+   margin: 0%;
+display: flex;
 
 }
 
@@ -53,8 +54,9 @@
 .footer-logo {
     @media screen and (min-width:768px) and (max-width:1199px) {
         margin-right: 165px;
-       
-}}
+}
+ 
+}
 
 .footer .logo-color {
     color: $white-color;
@@ -129,6 +131,10 @@
         justify-content: center;
             
         }
+        //  @media screen and (min-width: 1199px) {
+        //      justify-content: start;
+    
+        //  }
 }
 
 .contacts.tel {
@@ -138,7 +144,8 @@
  }}
 
 .socials-block {
-    padding-top: 0px;
+    padding-top: px;
+
    
 @media screen and (max-width: 767px) {
         margin-bottom: 60px;

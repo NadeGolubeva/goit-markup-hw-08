@@ -78,7 +78,11 @@ width: calc((100% - 8*15px)/ 4);
 
     color: $primary-text-color;
     text-transform: uppercase;
+text-align: center;
 
+@media  screen (min-width:768px) {
+    text-align: left;
+}
 }
 
 .feature__text {

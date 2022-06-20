@@ -148,6 +148,9 @@ text-transform: uppercase;
 
 
 /* Modal form */
+body.modal-open {
+    overflow: hidden;
+}
 
 .backdrop {
     position: fixed;
@@ -178,15 +181,18 @@ text-transform: uppercase;
     
     padding: 40px;
     margin: 0;
-    max-width: 450px;
+    max-width: 528px;
     @media screen and (min-width: 480px) {
-max-width: 450px;
-width: 100%;
+width: 450px;
+
 position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
 }
     @media screen and (min-width: 1200px) {
         width: 528px;
