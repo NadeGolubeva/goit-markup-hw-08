@@ -274,13 +274,13 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current.navigation-link {
+.current.nav-link {
   position: relative;
 }
 
-.current.navigation-link::after {
+.current.nav-link::after {
   position: absolute;
-  bottom: -0.1vw;
+  bottom: -30px;
   left: 0;
   content: '';
   display: block;
@@ -293,6 +293,12 @@ ul {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .current.nav-link::after {
+    bottom: -2px;
+  }
 }
 
 .list-address.list {
@@ -725,8 +731,8 @@ ul {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head.jpg);
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/head.png);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head.png);
   background-position: center;
   background-size: cover;
   padding-left: 15px;
