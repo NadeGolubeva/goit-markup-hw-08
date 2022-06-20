@@ -122,7 +122,7 @@ font-size: 24px;
 
 .current.navigation-link::after {
     position: absolute;
-    bottom: -200%;
+    
     left: 0;
 
     content: '';
@@ -136,6 +136,10 @@ font-size: 24px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    
+    @media screen (min-width: 1200px) {
+        bottom: -0.1vw;
+    }
 }
 
 .list-address.list {

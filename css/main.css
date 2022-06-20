@@ -280,7 +280,7 @@ ul {
 
 .current.navigation-link::after {
   position: absolute;
-  bottom: -200%;
+  bottom: -0.1vw;
   left: 0;
   content: '';
   display: block;
