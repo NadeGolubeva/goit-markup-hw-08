@@ -10,7 +10,7 @@
 
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1200px;
+    width: 1200px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -30,20 +30,29 @@
 
 .main-nav {
     display: flex;
+    align-items: center;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 .logo-block {
     padding: 15px;
+    // display: flex;
 }
 .page-header .logo {
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-right: 88px;
+    margin-right: 38px;
 
     @media screen and (min-width: 768px) {
         margin-top: 26px;
         margin-bottom: 26px;
-        margin-right: 93px;
+        margin-right: 53px;
     }
+         @media screen and (min-width: 1200px) {
+             margin-top: 26px;
+             margin-bottom: 26px;
+             margin-right: 133px;
+         }
 
     color: $accent-color;
     text-decoration: none;
@@ -65,7 +74,10 @@
     color: $black-color;
 }
 
-
+.nav-block {
+    display: flex;
+    align-items: center;
+}
 
 
 .header-nav.list {
@@ -86,6 +98,7 @@
     letter-spacing: 0.02em;
 
     color: $primary-text-color;
+
 }
 
 .header-nav.list .item+.item {
@@ -150,17 +163,29 @@
 
 }
 
-.list-address.list {
-    @media (max-width: 767px) {
+.list-address {
+@media (max-width: 767px) {
         display: none;
-    }
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    }
+         display: flex;
+                 justify-content: flex-end;
+                 flex-wrap: wrap;
+                 align-items: center;
+}
+
+.list-address.list {
+    
+
+   
+    // justify-content: space-between;
+        
     padding-left: 0;
-    margin-left: 84px;
+//  margin-left: 84px;
+    @media screen and (min-width: 1200px) {
+        // margin-left: 84px;
+        
+    }
 }
 
 .header .list-address.list {
@@ -195,14 +220,17 @@
     /* padding-top: 20px;padding-bottom: 20px; */
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     text-decoration: none;
 
     color: $secondary-text-color;
-
+@media screen and (min-width) {
+    font-size: 14px;
+        line-height: 1.14;
+}
 }
 
 /* icons contacts */
