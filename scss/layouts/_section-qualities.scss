@@ -80,7 +80,7 @@ width: calc((100% - 8*15px)/ 4);
     text-transform: uppercase;
 text-align: center;
 
-@media  screen (min-width:768px) {
+@media  screen and (min-width:768px) {
     text-align: left;
 }
 }
